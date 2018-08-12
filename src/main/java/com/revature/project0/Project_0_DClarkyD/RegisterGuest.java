@@ -21,11 +21,11 @@ public class RegisterGuest implements Screen {
 		u.setFirstName(scan.nextLine());
 		System.out.println("Enter last name");
 		u.setLastName(scan.nextLine());
-		System.out.println("Enter age");
-		String age = scan.nextLine();
+		System.out.println("Enter estimated yearly income");
+		String income = scan.nextLine();
 		
 		try {
-			u.setAge(Integer.valueOf(age));
+			u.setIncome(Integer.valueOf(income));
 			ud.createUser(u);
 			
 		} catch (NumberFormatException e) {

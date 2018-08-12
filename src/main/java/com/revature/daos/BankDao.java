@@ -12,6 +12,10 @@ public static final BankDao currentUserDao = BankSerializer.us;
 	 */
 	void createUser(BankUser u);
 	BankUser findByUsernameAndPassword(String username, String password);
+	BankUser findByUsername(String username);
+	void updateIncome(BankUser u);
+	void updateCurrency(String username, double newAmount);
+	double findCurrency(String username);
 	void updateUser(BankUser u);
 	void deleteUser(BankUser u);
 }

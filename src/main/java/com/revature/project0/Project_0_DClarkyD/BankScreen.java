@@ -8,24 +8,30 @@ public class BankScreen implements Screen {
 	private Scanner scan = new Scanner(System.in);
 
 	public Screen start() {
-		System.out.println("Please chose from following options:");
-		System.out.println("Enter 1 to build a weapon");
-		System.out.println("Enter 2 to view available weapon");
-		System.out.println("Enter 3 to view my weapons");
-		System.out.println("Enter 4 to sell a weapon");
+		System.out.println("Please choose from following options:");
+		System.out.println("Enter 1 to Deposit currency");
+		System.out.println("Enter 2 to withdraw currency");
+		System.out.println("Enter 3 to view Balance");
+		System.out.println("Enter 4 to view transaction history");
+		// if (ifAdmin)
+		System.out.println("Enter 5 to view users' accounts/transaction history ");
 		String selection = scan.nextLine();
 		switch (selection) {
 		case "1":
-			System.out.println("selected 1 not yet implemented that screen");
-			break;
+			DepositScreen d = new DepositScreen();
+			return d;
 		case "2":
-			System.out.println("selected 2 not yet implemented that screen");
-			break;
+			WithdrawalScreen w = new WithdrawalScreen();
+			return w;
 		case "3":
-			System.out.println("selected 3 not yet implemented that screen");
-			break;
+			BalanceScreen b = new BalanceScreen();
+			return b;
+
 		case "4":
 			System.out.println("selected 4 not yet implemented that screen");
+			break;
+		case "5":
+			System.out.println("selected 5 not yet implemented that screen");
 			break;
 		default:
 			break;
