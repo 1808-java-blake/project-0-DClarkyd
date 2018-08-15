@@ -27,6 +27,9 @@ public class LoginScreen implements Screen {
 		
 		BankUser currentUser = ud.findByUsernameAndPassword(username, password);
 		if (currentUser != null) {
+			if(username.equals("admin")){
+				return new AdminMainScreen();
+			}
 			return new BankScreen();
 		}
 

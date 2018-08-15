@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 import com.revature.screens.Screen;
 
-public class BankScreen implements Screen {
+public class AdminMainScreen implements Screen {
+
+	
 	private Scanner scan = new Scanner(System.in);
 
 	public Screen start() {
@@ -14,6 +16,7 @@ public class BankScreen implements Screen {
 		System.out.println("Enter 3 to view Balance History");
 		System.out.println("Enter 4 to view transaction history");
 		// if (ifAdmin)
+		System.out.println("Enter 5 to view users' accounts/transaction history ");
 		String selection = scan.nextLine();
 		switch (selection) {
 		case "1":
@@ -29,6 +32,9 @@ public class BankScreen implements Screen {
 		case "4":
 			HistoryScreen h = new HistoryScreen();
 			return h;
+		case "5":
+			AdminScreen a = new AdminScreen();
+			return a;
 		default:
 			break;
 		}
