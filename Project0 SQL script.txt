@@ -1,0 +1,19 @@
+SET SCHEMA 'banking_app';
+
+CREATE TABLE bank_user (
+    userid SERIAL PRIMARY KEY,
+	username VARCHAR(25),
+	password VARCHAR(25),
+    lastname VARCHAR(25),
+    firstname VARCHAR(25),
+    income NUMERIC(9,2)
+);
+
+CREATE TABLE bank_transactions (
+    historyid SERIAL PRIMARY KEY,
+	userid INTEGER REFERENCES bank_user(userid),
+	username VARCHAR(25),
+    current_balance NUMERIC(9,2),
+	change_time time(6),
+	change_amount Numeric(9,2)
+);
