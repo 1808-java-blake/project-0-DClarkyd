@@ -14,6 +14,12 @@ private historyDao uh = historyDao.currentHistoryDao;
 
 	@Override
 	public Screen start() {
+		System.out.println("  ___ ___ .___  ____________________________ _______________.___.");
+		System.out.println(" /   |   \\|   |/   _____/\\__    ___/\\_____  \\\\______   \\__  |   |");
+		System.out.println("/    ~    \\   |\\_____  \\   |    |    /   |   \\|       _//   |   |");
+		System.out.println("\\    Y    /   |/        \\  |    |   /    |    \\    |   \\\\____   |");
+		System.out.println(" \\___|_  /|___/_______  /  |____|   \\_______  /____|_  // ______|");
+		System.out.println("       \\/             \\/                    \\/       \\/ \\/       ");
 		System.out.println("What username would you like to see the history of?");
 		String userName = scan.nextLine();
 		System.out.println("Please enter the password for that username:");
@@ -43,6 +49,12 @@ private historyDao uh = historyDao.currentHistoryDao;
 //
 //				  System.out.println(key + " => " + value);
 //				}
+			System.out.println("  _____________ ____________ _________ ___________ _________ _________");
+			System.out.println(" /   _____/    |   \\_   ___ \\\\_   ___ \\\\_   _____//   _____//   _____/");
+			System.out.println(" \\_____  \\|    |   /    \\  \\//    \\  \\/ |    __)_ \\_____  \\ \\_____  \\ ");
+			System.out.println(" /        \\    |  /\\     \\___\\     \\____|        \\/        \\/        \\");
+			System.out.println("/_______  /______/  \\______  /\\______  /_______  /_______  /_______  /");
+			System.out.println("        \\/                 \\/        \\/        \\/        \\/        \\/ ");
 			BankScreen b = new BankScreen();
 			return b;
 		}

@@ -16,6 +16,12 @@ public class WithdrawalScreen implements Screen {
 	
 	@Override
 	public Screen start() {
+		System.out.println(" __      __._________________ ___________ __________    _____  __      __ ");
+		System.out.println("/  \\    /  \\   \\__    ___/   |   \\______ \\\\______   \\  /  _  \\/  \\    /  \\");
+		System.out.println("\\   \\/\\/   /   | |    | /    ~    \\    |  \\|       _/ /  /_\\  \\   \\/\\/   /");
+		System.out.println(" \\        /|   | |    | \\    Y    /    `   \\    |   \\/    |    \\        / ");
+		System.out.println("  \\__/\\  / |___| |____|  \\___|_  /_______  /____|_  /\\____|__  /\\__/\\  /  ");
+		System.out.println("       \\/                      \\/        \\/       \\/         \\/      \\/   ");
 		System.out.println("How much currency would you like to withdraw?");
 		String Selection = scan.nextLine();
 		System.out.println("What username would you like to withdraw the currency from?");
@@ -50,7 +56,12 @@ public class WithdrawalScreen implements Screen {
 //							HashMap<Double, Character> history = ud.findHistory(selectedUsername);
 //							history.put(d, 'W');
 //							currentUser.setHistory(history);
-							
+							System.out.println("  _____________ ____________ _________ ___________ _________ _________");
+							System.out.println(" /   _____/    |   \\_   ___ \\\\_   ___ \\\\_   _____//   _____//   _____/");
+							System.out.println(" \\_____  \\|    |   /    \\  \\//    \\  \\/ |    __)_ \\_____  \\ \\_____  \\ ");
+							System.out.println(" /        \\    |  /\\     \\___\\     \\____|        \\/        \\/        \\");
+							System.out.println("/_______  /______/  \\______  /\\______  /_______  /_______  /_______  /");
+							System.out.println("        \\/                 \\/        \\/        \\/        \\/        \\/ ");
 							BankScreen b = new BankScreen();
 							return b;
 						}

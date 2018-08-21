@@ -16,6 +16,12 @@ public class DepositScreen implements Screen {
 	
 	@Override
 	public Screen start() {
+		System.out.println("________  _____________________________    _________.______________");
+		System.out.println("\\______ \\ \\_   _____/\\______   \\_____  \\  /   _____/|   \\__    ___/");
+		System.out.println(" |    |  \\ |    __)_  |     ___//   |   \\ \\_____  \\ |   | |    |   ");
+		System.out.println(" |    `   \\|        \\ |    |   /    |    \\/        \\|   | |    |   ");
+		System.out.println("/_______  /_______  / |____|   \\_______  /_______  /|___| |____|   ");
+		System.out.println("        \\/        \\/                   \\/        \\/                ");
 		System.out.println("How much currency would you like to deposit?");
 		String Selection = scan.nextLine();
 		System.out.println("What username would you like to send the currency to?");
@@ -35,7 +41,12 @@ public class DepositScreen implements Screen {
 					
 //					currentCurrency = uh.findCurrency(selectedUsername) + d;
 					uh.updateHistory(currentHistory, currentCurrency);
-
+					System.out.println("  _____________ ____________ _________ ___________ _________ _________");
+					System.out.println(" /   _____/    |   \\_   ___ \\\\_   ___ \\\\_   _____//   _____//   _____/");
+					System.out.println(" \\_____  \\|    |   /    \\  \\//    \\  \\/ |    __)_ \\_____  \\ \\_____  \\ ");
+					System.out.println(" /        \\    |  /\\     \\___\\     \\____|        \\/        \\/        \\");
+					System.out.println("/_______  /______/  \\______  /\\______  /_______  /_______  /_______  /");
+					System.out.println("        \\/                 \\/        \\/        \\/        \\/        \\/ ");
 					BankScreen b = new BankScreen();
 					return b;
 				} else {

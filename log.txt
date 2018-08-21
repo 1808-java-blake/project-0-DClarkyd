@@ -450,3 +450,12 @@
 2018-08-20 20:58:17 WARN  BankDaoJdbc:89 - failed to find user with provided credentials from the db
 2018-08-20 20:58:26 TRACE BankDaoJdbc:58 - 1 records created
 2018-08-20 20:58:35 WARN  HistoryDaoJdbc:154 - failed to find user with provided credentials from the db
+2018-08-21 08:00:04 WARN  BankDaoJdbc:89 - failed to find user with provided credentials from the db
+2018-08-21 08:00:20 WARN  HistoryDaoJdbc:154 - failed to find user with provided credentials from the db
+2018-08-21 08:00:20 TRACE HistoryDaoJdbc:31 - 1 records created
+2018-08-21 08:02:10 WARN  BankDaoJdbc:89 - failed to find user with provided credentials from the db
+2018-08-21 08:02:35 TRACE HistoryDaoJdbc:31 - 1 records created
+2018-08-21 08:29:00 TRACE HistoryDaoJdbc:31 - 1 records created
+2018-08-21 08:29:17 WARN  BankDaoJdbc:89 - failed to find user with provided credentials from the db
+2018-08-21 08:29:18 WARN  HistoryDaoJdbc:122 - failed to find user with provided credentials from the db
+2018-08-21 08:29:24 TRACE HistoryDaoJdbc:31 - 1 records created

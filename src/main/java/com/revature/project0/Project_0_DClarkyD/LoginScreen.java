@@ -15,7 +15,12 @@ public class LoginScreen implements Screen {
 	
 	@Override
 	public Screen start() {
-
+		System.out.println(" __      __       .__                               ");
+		System.out.println("/  \\    /  \\ ____ |  |   ____  ____   _____   ____  ");
+		System.out.println("\\   \\/\\/   // __ \\|  | _/ ___\\/  _ \\ /     \\_/ __ \\ ");
+		System.out.println(" \\        /\\  ___/|  |_\\  \\__(  <_> )  Y Y  \\  ___/ ");
+		System.out.println("  \\__/\\  /  \\___  >____/\\___  >____/|__|_|  /\\___  >");
+		System.out.println("       \\/       \\/          \\/            \\/     \\/ ");
 		System.out.println("Enter Username or type Register to sign up: ");
 		String username = scan.nextLine();
 		if ("register".equalsIgnoreCase(username)) {
