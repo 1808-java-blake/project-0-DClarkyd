@@ -15,6 +15,12 @@ public class AdminScreen implements Screen{
 	
 	@Override
 	public Screen start() {
+		System.out.println("   _____  ________      _____  .___ _______   ");
+		System.out.println("  /  _  \\ \\______ \\    /     \\ |   |\\      \\  ");
+		System.out.println(" /  /_\\  \\ |    |  \\  /  \\ /  \\|   |/   |   \\ ");
+		System.out.println("/    |    \\|    `   \\/    Y    \\   /    |    \\");
+		System.out.println("\\____|__  /_______  /\\____|__  /___\\____|__  /");
+		System.out.println("        \\/        \\/         \\/            \\/ ");
 		// TODO Auto-generated method stub
 		System.out.println("What username would you like to access?");
 		String selectedUsername = scan.nextLine();

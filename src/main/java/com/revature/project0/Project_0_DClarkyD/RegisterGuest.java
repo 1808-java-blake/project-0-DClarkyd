@@ -15,6 +15,12 @@ public class RegisterGuest implements Screen {
 
 	@Override
 	public Screen start() {
+		System.out.println("_____________________ ________.___  _________________________________________ ");
+		System.out.println("\\______   \\_   _____//  _____/|   |/   _____/\\__    ___/\\_   _____/\\______   \\");
+		System.out.println(" |       _/|    __)_/   \\  ___|   |\\_____  \\   |    |    |    __)_  |       _/");
+		System.out.println(" |    |   \\|        \\    \\_\\  \\   |/        \\  |    |    |        \\ |    |   \\");
+		System.out.println(" |____|_  /_______  /\\______  /___/_______  /  |____|   /_______  / |____|_  /");
+		System.out.println("        \\/        \\/        \\/            \\/                    \\/         \\/ ");
 		BankUser u = new BankUser();
 		BalanceHistory h = new BalanceHistory();
 		System.out.println("Enter new username");
@@ -41,7 +47,12 @@ public class RegisterGuest implements Screen {
 		} catch (NumberFormatException e) {
 			System.out.println("Invalid number");
 		}
-		
+		System.out.println("  _____________ ____________ _________ ___________ _________ _________");
+		System.out.println(" /   _____/    |   \\_   ___ \\\\_   ___ \\\\_   _____//   _____//   _____/");
+		System.out.println(" \\_____  \\|    |   /    \\  \\//    \\  \\/ |    __)_ \\_____  \\ \\_____  \\ ");
+		System.out.println(" /        \\    |  /\\     \\___\\     \\____|        \\/        \\/        \\");
+		System.out.println("/_______  /______/  \\______  /\\______  /_______  /_______  /_______  /");
+		System.out.println("        \\/                 \\/        \\/        \\/        \\/        \\/ ");
 		return new LoginScreen();
 	}
 

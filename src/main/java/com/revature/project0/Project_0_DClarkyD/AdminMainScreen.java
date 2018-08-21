@@ -10,6 +10,12 @@ public class AdminMainScreen implements Screen {
 	private Scanner scan = new Scanner(System.in);
 
 	public Screen start() {
+		System.out.println("   _____  ________      _____  .___ _______   ");
+		System.out.println("  /  _  \\ \\______ \\    /     \\ |   |\\      \\  ");
+		System.out.println(" /  /_\\  \\ |    |  \\  /  \\ /  \\|   |/   |   \\ ");
+		System.out.println("/    |    \\|    `   \\/    Y    \\   /    |    \\");
+		System.out.println("\\____|__  /_______  /\\____|__  /___\\____|__  /");
+		System.out.println("        \\/        \\/         \\/            \\/ ");
 		System.out.println("Please choose from following options:");
 		System.out.println("Enter 1 to Deposit currency");
 		System.out.println("Enter 2 to withdraw currency");
