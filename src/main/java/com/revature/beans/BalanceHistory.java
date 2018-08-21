@@ -1,7 +1,10 @@
 package com.revature.beans;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.TimeZone;
+import java.util.Date;
 
 public class BalanceHistory implements Serializable{
 
@@ -12,15 +15,26 @@ public class BalanceHistory implements Serializable{
 
 	private static ArrayList<Double> balanceHistory = new ArrayList<Double>();
 	private String username;
+	private Double balanceChange;
+//	java.util.Date dt = new java.util.Date();
+//
+//	java.text.SimpleDateFormat sdf = 
+//	     new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+//	String currentTime = sdf.format(dt);
+//	private Timestamp timestamp = new Timestamp(Date.getTime());
+	private Double currentBalance;
 //	public BalanceHistory() {
 //		super();
 //	}
 	
-	public  BalanceHistory(String username){
+	public  BalanceHistory(String username,  Double balanceChange, Double currentBalance){
 
-		balanceHistory.add((double) 0);
+//		balanceHistory.add((double) 0);//
 		this.username = username;
+		this.balanceChange = balanceChange;
+//		this.currentTime = new java.util.Date();
+		this.currentBalance = currentBalance;
 	}
 
 	@Override
@@ -45,18 +59,18 @@ public class BalanceHistory implements Serializable{
 		return true;
 	}
 
-	public ArrayList<Double> getBalanceHistory() {
-		return balanceHistory;
-	}
+//	public ArrayList<Double> getBalanceHistory() {
+//		return balanceHistory;
+//	}
 
-	public void setBalanceHistory(double oldBalance, double newBalance) {
-//		if(balanceHistory == null) {
-//			ArrayList<Double> balanceHistory = new ArrayList<>();
-//			balanceHistory.add(newBalance);
-//			return;
-//		}
-		balanceHistory.add(newBalance);
-	}
+//	public void setBalanceHistory(double oldBalance, double newBalance) {
+////		if(balanceHistory == null) {
+////			ArrayList<Double> balanceHistory = new ArrayList<>();
+////			balanceHistory.add(newBalance);
+////			return;
+////		}
+//		balanceHistory.add(newBalance);
+//	}
 
 	public BalanceHistory() {
 		// TODO Auto-generated constructor stub
@@ -73,14 +87,27 @@ public class BalanceHistory implements Serializable{
 
 	public void printBalanceHistory() {
 		// TODO Auto-generated method stub
-		for(int i = 0; i < balanceHistory.size(); i++) {
-			System.out.println(balanceHistory.get(i));
-		}
+
 	}
 
 	public void createHistory(BalanceHistory h) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public void setOldBalance(Double newBalance) {
+		return;
+	}
+	
+	public double getNewBalance() {
+		return this.currentBalance;
+	}
+	
+	public double getOldBalance() {
+		if(balanceHistory.size() > 0) {
+		return(balanceHistory.get(balanceHistory.size()-1));
+		}
+		return(balanceHistory.get(0));
 	}
 
 	public void setUsername(String d) {
@@ -89,5 +116,30 @@ public class BalanceHistory implements Serializable{
 	
 	public String getUsername() {
 		return username;
+	}
+
+	public double getCurrentBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Double getBalanceChange() {
+		return balanceChange;
+	}
+
+	public void setBalanceChange(Double balanceChange) {
+		this.balanceChange = balanceChange;
+	}
+
+//	public TimeZone getChangeTime() {
+//		return currentTime;
+//	}
+//
+//	public void setCurrentTime(TimeZone currentTime) {
+//		this.currentTime = currentTime;
+//	}
+
+	public void setCurrencyAmount(Double currentBalance) {
+		this.currentBalance = currentBalance;
 	}
 }

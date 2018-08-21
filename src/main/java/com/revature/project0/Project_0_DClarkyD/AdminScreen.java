@@ -20,7 +20,7 @@ public class AdminScreen implements Screen{
 		String selectedUsername = scan.nextLine();
 		BalanceHistory currentHistory = uh.findByUserName(selectedUsername);
 		if (selectedUsername != null) {
-			double currentCurrency = ud.findCurrency(selectedUsername);
+			double currentCurrency = uh.findCurrency(selectedUsername);
 				System.out.println(selectedUsername + " currently has " + currentCurrency + " currency");
 				System.out.println("History:");
 				currentHistory.printBalanceHistory();
